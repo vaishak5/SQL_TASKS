@@ -1,0 +1,24 @@
+2.From the table, write a SQL query to find the salaries of all employees. Return salary
+
+QUERY:
+
+SELECT salary FROM employees;
+
+Output:
+
+salary
+----------------
+6000.00
+2750.00
+2550.00
+2957.00
+3100.00
+3100.00
+900.00
+1700.00
+1350.00
+1350.00
+1600.00
+1200.00
+1050.00
+1400.00

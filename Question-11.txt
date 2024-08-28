@@ -1,0 +1,14 @@
+11.From the following table, write a SQL query to compute the average salary of those
+employees who work as ‘ANALYST’. Return average salary.
+
+QUERY:
+
+SELECT AVG(salary) AS avg
+FROM employees 
+WHERE job_name = 'ANALYST';
+
+Output:
+
+avg
+-------------------------------
+3100.000000

@@ -1,0 +1,26 @@
+5. From the following table, write a SQL query to list the employee's name and job name as
+a format of "Employee & Job".
+
+QUERY:
+
+SELECT emp_name + '   ' + job_name AS [Employee & Job]
+FROM employees;
+
+Output:
+
+Employee 	& Job
+----------------------------------------------------------
+KAYLING   	PRESIDENT
+BLAZE   	MANAGER
+CLARE   	MANAGER
+JONAS   	MANAGER
+SCARLET   	ANALYST
+FRANK   	ANALYST
+SANDRINE   	CLERK
+ADELYN   	SALESMAN
+WADE   		SALESMAN
+MADDEN   	SALESMAN
+TUCKER   	SALESMAN
+ADNRES   	CLERK
+JULIUS   	CLERK
+MARKER   	CLERK

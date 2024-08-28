@@ -1,0 +1,29 @@
+6.From the following table, write a SQL query to find those employees with a hire date in
+the format like February 22, 1991. Return employee ID, employee name, salary, hire date.
+
+QUERY:
+
+SELECT emp_id,
+       emp_name,
+       salary,
+       FORMAT(hire_date, 'MMMM dd, yyyy') AS to_char
+FROM employees;
+
+Output:
+
+emp_id	emp_name	salary		to_char
+-----------------------------------------------------------
+68319	KAYLING		6000.00		November 18, 1991
+66928	BLAZE		2750.00		May 01, 1991
+67832	CLARE		2550.00		June 09, 1991
+65646	JONAS		2957.00		April 02, 1991
+67858	SCARLET		3100.00		April 19, 1997
+69062	FRANK		3100.00		December 03, 1991
+63679	SANDRINE	900.00		December 18, 1990
+64989	ADELYN		1700.00		February 20, 1991
+65271	WADE		1350.00		February 22, 1991
+66564	MADDEN		1350.00		September 28, 1991
+68454	TUCKER		1600.00		September 08, 1991
+68786	ADNRES		1200.00		May 23, 1997
+69000	JULIUS		1050.00		December 03, 1991
+69324	MARKER		1400.00		January 23, 1992
