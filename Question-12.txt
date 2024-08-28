@@ -1,0 +1,12 @@
+12.From the following table, write a SQL query to find the details of the employee ‘BLAZE’.
+
+QUERY:
+
+SELECT * FROM employees
+WHERE emp_name='BLAZE';
+
+Output:
+
+emp_id	emp_name	job_name	manager_id	hire_date	salary		commission	dep_id
+---------------------------------------------------------------------------------------------------------------
+66928	BLAZE		MANAGER		68319		1991-05-01	2750.00		NULL		3001
