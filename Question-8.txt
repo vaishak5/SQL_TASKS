@@ -1,0 +1,25 @@
+2.From the following table, write a SQL query to find the employee ID, salary, and
+commission of all the employees.
+
+QUERY:
+
+SELECT emp_id,salary,commission FROM employees;
+
+Output:
+
+emp_id		salary		commission
+------------------------------------------------------------
+68319		6000.00		NULL
+66928		2750.00		NULL
+67832		2550.00		NULL
+65646		2957.00		NULL
+67858		3100.00		NULL
+69062		3100.00		NULL
+63679		900.00		NULL
+64989		1700.00		400.00
+65271		1350.00		600.00
+66564		1350.00		1500.00
+68454		1600.00		0.00
+68786		1200.00		NULL
+69000		1050.00		NULL
+69324		1400.00		NULL

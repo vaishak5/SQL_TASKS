@@ -1,0 +1,15 @@
+3.From the table, write a SQL query to find the unique designations of the employees.
+Return job name
+
+QUERY:
+
+SELECT DISTINCT job_name FROM employees;
+
+Output:
+job_name
+------------------------------------------
+ANALYST
+CLERK
+MANAGER
+PRESIDENT
+SALESMAN

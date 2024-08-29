@@ -1,0 +1,44 @@
+15. From the following table, write a SQL query to find those employees who joined before
+1st April 1991. Return employee ID, employee name, hire date and salary.
+
+QUERY: (Case-1 Before the year 1991-04-01)
+
+SELECT e.emp_id,
+       e.emp_name,
+       e.hire_date,
+       e.salary
+FROM employees e
+WHERE hire_date <'1991-04-01';
+
+Output:
+emp_id	emp_name	hire_date	salary
+----------------------------------------------------
+63679	SANDRINE	1990-12-18	900.00
+64989	ADELYN		1991-02-20	1700.00
+65271	WADE		1991-02-22	1350.00
+----------------------------------------------------
+
+QUERY: (Case-2 After the year 1991-04-01)
+
+SELECT e.emp_id,
+       e.emp_name,
+       e.hire_date,
+       e.salary
+FROM employees e
+WHERE hire_date >'1991-04-01';
+
+Output:
+
+emp_id	emp_name	hire_date	salary
+------------------------------------------------------
+68319	KAYLING		1991-11-18	6000.00
+66928	BLAZE		1991-05-01	2750.00
+67832	CLARE		1991-06-09	2550.00
+65646	JONAS		1991-04-02	2957.00
+67858	SCARLET		1997-04-19	3100.00
+69062	FRANK		1991-12-03	3100.00
+66564	MADDEN		1991-09-28	1350.00
+68454	TUCKER		1991-09-08	1600.00
+68786	ADNRES		1997-05-23	1200.00
+69000	JULIUS		1991-12-03	1050.00
+69324	MARKER		1992-01-23	1400.00

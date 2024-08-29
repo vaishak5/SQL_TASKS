@@ -1,0 +1,21 @@
+21.From the table, write a SQL query to list the managers and number of employees work
+under them. Sort the result set in ascending order on manager. Return manager ID and
+number of employees under them.(Using GROUP BY & ORDER BY).
+
+QUERY:
+
+SELECT manager_id, COUNT(emp_name) AS empCount FROM employees
+WHERE manager_id!=''
+GROUP BY manager_id 
+ORDER BY manager_id;
+
+Output:
+
+manager_id	empCount
+------------------------------------------
+65646		2
+66928		5
+67832		1
+67858		1
+68319		3
+69062		1
