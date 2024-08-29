@@ -1,0 +1,21 @@
+20. From the following table, write a SQL query to find those employees who work in the
+department ID 1001 or 2001. Return employee ID, employee name, department ID,
+department location, and department name.(Using IN clause)
+
+QUERY:
+
+SELECT e.emp_id ,e.emp_name, d.dep_id, d.dep_name, d.dep_location FROM employees e , department d
+WHERE e.dep_id=d.dep_id AND e.dep_id IN(1001,2001);
+
+Output:
+
+emp_id	emp_name	dep_id	dep_name	dep_location
+-----------------------------------------------------------------------
+68319	KAYLING		1001	FINANCE		SYDNEY
+67832	CLARE		1001	FINANCE		SYDNEY
+65646	JONAS		2001	AUDIT		MELBOURNE
+67858	SCARLET		2001	AUDIT		MELBOURNE
+69062	FRANK		2001	AUDIT		MELBOURNE
+63679	SANDRINE	2001	AUDIT		MELBOURNE
+68786	ADNRES		2001	AUDIT		MELBOURNE
+69324	MARKER		1001	FINANCE		SYDNEY

@@ -1,0 +1,16 @@
+22. From the table, write a SQL query to find those departments where at least two
+employees work. Return department id, number of employees.(GROUP BY & HAVING)
+
+QUERY:
+
+SELECT d.dep_id, COUNT(e.emp_name) as empCount FROM department d JOIN employees e ON e.dep_id=d.dep_id
+GROUP BY d.dep_id
+HAVING COUNT(e.emp_name)>=2;
+
+Output:
+
+dep_id	empCount
+--------------------------------
+1001	3
+2001	5
+3001	6
