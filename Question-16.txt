@@ -1,0 +1,13 @@
+16.From the following table, write a SQL query to find the name and salary of the employee
+FRANK.
+
+QUERY:
+
+SELECT emp_name,salary FROM employees
+WHERE emp_name='FRANK';
+
+Output:
+
+emp_name	salary
+--------------------------------------
+FRANK		3100.00

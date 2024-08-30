@@ -1,0 +1,21 @@
+19. From the table, write a SQL query to find the average salary and average total
+remuneration (salary and commission) for each type of job. Return name, average salary
+and average total remuneration. (Using GROUP BY)
+
+QUERY:
+
+SELECT job_name,
+      avg(salary) AS avgSalary,
+       avg(salary+commission) AS avgTotalRenumeration
+FROM employees
+GROUP BY job_name;
+
+Output:
+
+job_name	avgSalary	avgTotalRenumeration
+------------------------------------------------------
+ANALYST		3100.000000	NULL
+CLERK		1137.500000	NULL
+MANAGER		2752.333333	NULL
+PRESIDENT	6000.000000	NULL
+SALESMAN	1500.000000	2125.000000

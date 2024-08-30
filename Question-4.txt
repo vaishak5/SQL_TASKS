@@ -1,0 +1,27 @@
+4. From the following table, write a SQL query to list the employees’ names, increase their
+salary by 15%, and express the number of Dollars.
+
+QUERY:
+
+SELECT emp_name,
+FORMAT(ROUND(1.15 * salary, 0), 'C', 'en-US') AS salary
+FROM employees;
+
+Output:
+
+emp_name	salary
+-------------------------------
+KAYLING		$6,900.00
+BLAZE		$3,163.00
+CLARE		$2,933.00
+JONAS		$3,401.00
+SCARLET		$3,565.00
+FRANK		$3,565.00
+SANDRINE	$1,035.00
+ADELYN		$1,955.00
+WADE		$1,553.00
+MADDEN		$1,553.00
+TUCKER		$1,840.00
+ADNRES		$1,380.00
+JULIUS		$1,208.00
+MARKER		$1,610.00
